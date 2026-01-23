@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Group — An Inquiry into Forms of the Possible</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f0;
+            color: #1a1a1a;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        .sidebar h1 {
+            font-size: 1.1rem;
+            font-weight: normal;
+            margin: 0 0 0.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #4a6278;
+        }
+
+        .sidebar h2 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #95a5a6;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .week-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .week-list li {
+            margin: 0.25rem 0;
+        }
+
+        .week-list a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.4rem 0.5rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .week-list a:hover {
+            background: #34495e;
+            color: #fff;
+        }
+
+        .week-list a.active {
+            background: #3498db;
+            color: #fff;
+        }
+
+        .reading-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .reading-list li {
+            margin: 0.2rem 0;
+            padding: 0.3rem 0.4rem;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .reading-list li:hover {
+            background: #34495e;
+        }
+
+        .reading-list li.active {
+            background: #2980b9;
+        }
+
+        /* Main content area */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .toolbar {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .toolbar h3 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: normal;
+            flex: 1;
+        }
+
+        .toolbar button {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .toolbar button:hover {
+            background: #2980b9;
+        }
+
+        .toolbar button.secondary {
+            background: #95a5a6;
+        }
+
+        .toolbar button.secondary:hover {
+            background: #7f8c8d;
+        }
+
+        .content-area {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* PDF/Text viewer */
+        .viewer {
+            flex: 1;
+            background: #fff;
+            overflow: auto;
+            padding: 2rem;
+        }
+
+        .viewer iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .text-content {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .text-content p {
+            margin: 1rem 0;
+        }
+
+        /* Annotations panel */
+        .annotations-panel {
+            width: 320px;
+            background: #fff;
+            border-left: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .annotations-header {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .annotations-header h4 {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .annotation-count {
+            background: #3498db;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 10px;
+        }
+
+        .annotations-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.5rem;
+        }
+
+        .annotation-card {
+            background: #fefce8;
+            border: 1px solid #fde047;
+            border-radius: 6px;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .annotation-card.highlight-blue {
+            background: #eff6ff;
+            border-color: #93c5fd;
+        }
+
+        .annotation-card.highlight-green {
+            background: #f0fdf4;
+            border-color: #86efac;
+        }
+
+        .annotation-card.highlight-purple {
+            background: #faf5ff;
+            border-color: #d8b4fe;
+        }
+
+        .annotation-quote {
+            font-style: italic;
+            color: #666;
+            border-left: 2px solid #ddd;
+            padding-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .annotation-text {
+            margin-bottom: 0.5rem;
+        }
+
+        .annotation-meta {
+            font-size: 0.75rem;
+            color: #888;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .annotation-author {
+            font-weight: 600;
+            color: #666;
+        }
+
+        /* New annotation form */
+        .new-annotation {
+            border-top: 1px solid #ddd;
+            padding: 0.75rem;
+        }
+
+        .new-annotation textarea {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 0.5rem;
+            font-family: inherit;
+            font-size: 0.85rem;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .new-annotation textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .annotation-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .color-picker {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .color-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .color-dot.selected {
+            border-color: #333;
+        }
+
+        .color-dot.yellow { background: #fde047; }
+        .color-dot.blue { background: #93c5fd; }
+        .color-dot.green { background: #86efac; }
+        .color-dot.purple { background: #d8b4fe; }
+
+        /* User indicator */
+        .user-section {
+            padding: 0.75rem;
+            border-top: 1px solid #4a6278;
+            margin-top: auto;
+        }
+
+        .user-section label {
+            font-size: 0.75rem;
+            color: #95a5a6;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .user-section input {
+            width: 100%;
+            padding: 0.4rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* Selection popup */
+        .selection-popup {
+            position: fixed;
+            background: #2c3e50;
+            color: #fff;
+            padding: 0.5rem;
+            border-radius: 6px;
+            display: none;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .selection-popup button {
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 0.3rem 0.5rem;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        .selection-popup button:hover {
+            background: #34495e;
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+        }
+
+        .empty-state p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with weeks and readings -->
+        <nav class="sidebar">
+            <h1>An Inquiry into Forms of the Possible</h1>
+            <p style="font-size: 0.8rem; color: #95a5a6; margin: 0;">Spring 2026 Reading Group</p>
+
+            <h2>Unit I: Ancient &amp; Medieval</h2>
+            <ul class="week-list">
+                <li>
+                    <a href="#" class="week-link active" data-week="1">Week 1: Parmenides</a>
+                    <ul class="reading-list">
+                        <li class="active" data-reading="parmenides">Parmenides, "On Nature"</li>
+                        <li data-reading="kingsley">Kingsley, Dark Places ch. 1–4</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="week-link" data-week="2">Week 2: Aristotle</a>
+                    <ul class="reading-list" style="display:none;">
+                        <li data-reading="aristotle_meta">Metaphysics Θ</li>
+                        <li data-reading="aristotle_di">De Interpretatione ch. 9</li>
+                        <li data-reading="witt">Witt, "Priority of Actuality"</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="week-link" data-week="3">Week 3: Avicenna</a>
+                    <ul class="reading-list" style="display:none;">
+                        <li data-reading="avicenna">Metaphysics of The Healing</li>
+                        <li data-reading="adamson">Adamson, "Necessary Existent"</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="week-link" data-week="4">Week 4: Nagarjuna</a>
+                    <ul class="reading-list" style="display:none;">
+                        <li data-reading="nagarjuna">Mūlamadhyamakakārikā</li>
+                        <li data-reading="garfield">Garfield, "Dependent Arising"</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Unit II: Rationalism &amp; Imaginal</h2>
+            <ul class="week-list">
+                <li><a href="#" class="week-link" data-week="5">Week 5: Leibniz &amp; Du Châtelet</a></li>
+                <li><a href="#" class="week-link" data-week="6">Week 6: Kant &amp; Leech</a></li>
+                <li><a href="#" class="week-link" data-week="7">Week 7: Sufi Metaphysics</a></li>
+            </ul>
+
+            <h2>Unit III: Phenomenology &amp; Pragmatism</h2>
+            <ul class="week-list">
+                <li><a href="#" class="week-link" data-week="8">Week 8: Husserl &amp; Derrida</a></li>
+                <li><a href="#" class="week-link" data-week="9">Week 9: Heidegger &amp; Arendt</a></li>
+                <li><a href="#" class="week-link" data-week="10">Week 10: Peirce</a></li>
+                <li><a href="#" class="week-link" data-week="11">Week 11: Nothingness</a></li>
+            </ul>
+
+            <h2>Unit IV: Process &amp; Contemplation</h2>
+            <ul class="week-list">
+                <li><a href="#" class="week-link" data-week="12">Week 12: Whitehead</a></li>
+                <li><a href="#" class="week-link" data-week="13">Week 13: Contemplative Science</a></li>
+                <li><a href="#" class="week-link" data-week="14">Week 14: Neoplatonism</a></li>
+            </ul>
+
+            <h2>Unit V: Mathematical Possibility</h2>
+            <ul class="week-list">
+                <li><a href="#" class="week-link" data-week="15">Week 15: Modal Logic</a></li>
+                <li><a href="#" class="week-link" data-week="16">Week 16: Foster</a></li>
+            </ul>
+
+            <div class="user-section">
+                <label>Your name (for annotations)</label>
+                <input type="text" id="username" placeholder="Enter your name" />
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <main class="main">
+            <div class="toolbar">
+                <h3 id="current-reading">Parmenides, "On Nature"</h3>
+                <button class="secondary" onclick="toggleAnnotations()">Toggle Annotations</button>
+                <button class="secondary" onclick="importAnnotations()">Import</button>
+                <button onclick="exportAnnotations()">Export</button>
+            </div>
+
+            <div class="content-area">
+                <div class="viewer" id="viewer">
+                    <!-- PDF will be embedded here, or text content displayed -->
+                    <div class="text-content" id="text-content">
+                        <p><em>Select a reading from the sidebar to begin. PDFs will display here with annotation support.</em></p>
+                        <p>To annotate:</p>
+                        <ol>
+                            <li>Select text in the reading</li>
+                            <li>Click "Annotate" in the popup</li>
+                            <li>Add your comment</li>
+                            <li>Your annotations sync with the group</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <aside class="annotations-panel" id="annotations-panel">
+                    <div class="annotations-header">
+                        <h4>Annotations</h4>
+                        <span class="annotation-count" id="annotation-count">0</span>
+                    </div>
+
+                    <div class="annotations-list" id="annotations-list">
+                        <div class="empty-state">
+                            <p>No annotations yet.</p>
+                            <p style="font-size: 0.8rem;">Select text to add the first one.</p>
+                        </div>
+                    </div>
+
+                    <div class="new-annotation" id="new-annotation" style="display: none;">
+                        <div class="annotation-quote" id="selected-quote"></div>
+                        <textarea id="annotation-input" placeholder="Add your comment..."></textarea>
+                        <div class="annotation-actions">
+                            <div class="color-picker">
+                                <div class="color-dot yellow selected" data-color="yellow"></div>
+                                <div class="color-dot blue" data-color="blue"></div>
+                                <div class="color-dot green" data-color="green"></div>
+                                <div class="color-dot purple" data-color="purple"></div>
+                            </div>
+                            <button onclick="saveAnnotation()" style="margin-left: auto;">Save</button>
+                            <button class="secondary" onclick="cancelAnnotation()">Cancel</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <!-- Selection popup -->
+    <div class="selection-popup" id="selection-popup">
+        <button onclick="startAnnotation()">📝 Annotate</button>
+        <button onclick="copySelection()">📋 Copy</button>
+    </div>
+
+    <script>
+        // State
+        let annotations = JSON.parse(localStorage.getItem('metamodality_annotations') || '{}');
+        let currentReading = 'parmenides';
+        let selectedText = '';
+        let selectedColor = 'yellow';
+
+        // Readings data (PDF paths)
+        const readings = {
+            parmenides: { title: 'Parmenides, "On Nature"', pdf: 'readings/week01_parmenides.pdf' },
+            kingsley: { title: 'Kingsley, In the Dark Places of Wisdom, ch. 1–4', pdf: 'readings/week01_kingsley.pdf' },
+            aristotle_meta: { title: 'Aristotle, Metaphysics Θ', pdf: 'readings/week02_aristotle_metaphysics.pdf' },
+            aristotle_di: { title: 'Aristotle, De Interpretatione ch. 9', pdf: 'readings/week02_aristotle_de_interpretatione.pdf' },
+            witt: { title: 'Witt, "The Priority of Actuality"', pdf: 'readings/week02_witt.pdf' },
+            avicenna: { title: 'Avicenna, Metaphysics of The Healing', pdf: 'readings/week03_avicenna.pdf' },
+            adamson: { title: 'Adamson, "From the Necessary Existent to God"', pdf: 'readings/week03_adamson.pdf' },
+            nagarjuna: { title: 'Nagarjuna, Mūlamadhyamakakārikā (Garfield trans.)', pdf: 'readings/week04_nagarjuna.pdf' },
+            garfield: { title: 'Garfield, "Dependent Arising and the Emptiness of Emptiness"', pdf: 'readings/week04_garfield.pdf' }
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load username
+            const savedName = localStorage.getItem('metamodality_username');
+            if (savedName) {
+                document.getElementById('username').value = savedName;
+            }
+
+            // Save username on change
+            document.getElementById('username').addEventListener('change', (e) => {
+                localStorage.setItem('metamodality_username', e.target.value);
+            });
+
+            // Week toggles
+            document.querySelectorAll('.week-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const readingList = link.nextElementSibling;
+                    if (readingList && readingList.classList.contains('reading-list')) {
+                        readingList.style.display = readingList.style.display === 'none' ? 'block' : 'none';
+                    }
+                });
+            });
+
+            // Reading selection
+            document.querySelectorAll('.reading-list li').forEach(item => {
+                item.addEventListener('click', () => {
+                    document.querySelectorAll('.reading-list li').forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    loadReading(item.dataset.reading);
+                });
+            });
+
+            // Color picker
+            document.querySelectorAll('.color-dot').forEach(dot => {
+                dot.addEventListener('click', () => {
+                    document.querySelectorAll('.color-dot').forEach(d => d.classList.remove('selected'));
+                    dot.classList.add('selected');
+                    selectedColor = dot.dataset.color;
+                });
+            });
+
+            // Text selection handling
+            document.getElementById('viewer').addEventListener('mouseup', handleSelection);
+
+            // Hide popup when clicking elsewhere
+            document.addEventListener('mousedown', (e) => {
+                if (!e.target.closest('.selection-popup')) {
+                    document.getElementById('selection-popup').style.display = 'none';
+                }
+            });
+
+            // Load initial reading
+            loadReading('parmenides');
+        });
+
+        function loadReading(readingId) {
+            currentReading = readingId;
+            const reading = readings[readingId];
+
+            if (!reading) {
+                document.getElementById('text-content').innerHTML = '<p>Reading not found.</p>';
+                return;
+            }
+
+            document.getElementById('current-reading').textContent = reading.title;
+
+            // Load PDF
+            const viewer = document.getElementById('viewer');
+            viewer.innerHTML = `<iframe src="${reading.pdf}" title="${reading.title}"></iframe>`;
+
+            // Load annotations for this reading
+            renderAnnotations();
+        }
+
+        function handleSelection(e) {
+            const selection = window.getSelection();
+            const text = selection.toString().trim();
+
+            if (text.length > 0) {
+                selectedText = text;
+                const popup = document.getElementById('selection-popup');
+                const rect = selection.getRangeAt(0).getBoundingClientRect();
+
+                popup.style.left = `${rect.left + rect.width/2 - 60}px`;
+                popup.style.top = `${rect.bottom + 10}px`;
+                popup.style.display = 'block';
+            }
+        }
+
+        function startAnnotation() {
+            document.getElementById('selection-popup').style.display = 'none';
+            document.getElementById('selected-quote').textContent = selectedText.substring(0, 150) + (selectedText.length > 150 ? '...' : '');
+            document.getElementById('new-annotation').style.display = 'block';
+            document.getElementById('annotation-input').focus();
+        }
+
+        function copySelection() {
+            navigator.clipboard.writeText(selectedText);
+            document.getElementById('selection-popup').style.display = 'none';
+        }
+
+        function saveAnnotation() {
+            const comment = document.getElementById('annotation-input').value.trim();
+            const username = document.getElementById('username').value.trim() || 'Anonymous';
+
+            if (!annotations[currentReading]) {
+                annotations[currentReading] = [];
+            }
+
+            annotations[currentReading].push({
+                id: Date.now(),
+                quote: selectedText,
+                comment: comment,
+                color: selectedColor,
+                author: username,
+                timestamp: new Date().toISOString()
+            });
+
+            localStorage.setItem('metamodality_annotations', JSON.stringify(annotations));
+
+            cancelAnnotation();
+            renderAnnotations();
+        }
+
+        function cancelAnnotation() {
+            document.getElementById('new-annotation').style.display = 'none';
+            document.getElementById('annotation-input').value = '';
+            selectedText = '';
+        }
+
+        function renderAnnotations() {
+            const list = document.getElementById('annotations-list');
+            const readingAnnotations = annotations[currentReading] || [];
+
+            document.getElementById('annotation-count').textContent = readingAnnotations.length;
+
+            if (readingAnnotations.length === 0) {
+                list.innerHTML = `
+                    <div class="empty-state">
+                        <p>No annotations yet.</p>
+                        <p style="font-size: 0.8rem;">Select text to add the first one.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            list.innerHTML = readingAnnotations.map(ann => `
+                <div class="annotation-card highlight-${ann.color}">
+                    <div class="annotation-quote">"${ann.quote.substring(0, 100)}${ann.quote.length > 100 ? '...' : ''}"</div>
+                    ${ann.comment ? `<div class="annotation-text">${ann.comment}</div>` : ''}
+                    <div class="annotation-meta">
+                        <span class="annotation-author">${ann.author}</span>
+                        <span>${formatDate(ann.timestamp)}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function formatDate(isoString) {
+            const date = new Date(isoString);
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
+
+        function toggleAnnotations() {
+            const panel = document.getElementById('annotations-panel');
+            panel.style.display = panel.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        function exportAnnotations() {
+            const data = JSON.stringify(annotations, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'metamodality_annotations.json';
+            a.click();
+        }
+
+        // Load shared annotations from annotations.json
+        async function loadSharedAnnotations() {
+            try {
+                const response = await fetch('annotations.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    // Merge shared annotations with local
+                    if (data.annotations) {
+                        for (const [reading, annList] of Object.entries(data.annotations)) {
+                            if (!annotations[reading]) {
+                                annotations[reading] = [];
+                            }
+                            // Add shared annotations that aren't already local
+                            for (const ann of annList) {
+                                const exists = annotations[reading].some(a => a.id === ann.id);
+                                if (!exists) {
+                                    annotations[reading].push({...ann, shared: true});
+                                }
+                            }
+                        }
+                        renderAnnotations();
+                    }
+                }
+            } catch (e) {
+                console.log('No shared annotations file found');
+            }
+        }
+
+        // Import annotations from file
+        function importAnnotations() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            input.onchange = async (e) => {
+                const file = e.target.files[0];
+                const text = await file.text();
+                const data = JSON.parse(text);
+
+                // Merge imported annotations
+                for (const [reading, annList] of Object.entries(data)) {
+                    if (!annotations[reading]) {
+                        annotations[reading] = [];
+                    }
+                    for (const ann of annList) {
+                        const exists = annotations[reading].some(a => a.id === ann.id);
+                        if (!exists) {
+                            annotations[reading].push({...ann, imported: true});
+                        }
+                    }
+                }
+
+                localStorage.setItem('metamodality_annotations', JSON.stringify(annotations));
+                renderAnnotations();
+                alert('Annotations imported successfully!');
+            };
+            input.click();
+        }
+
+        // Load shared annotations on startup
+        loadSharedAnnotations();
+    </script>
+</body>
+</html>
