@@ -64,11 +64,9 @@ What must any possible experience conform to? Kant's Postulates distinguish logi
 
 **Week 7 — March 18: The Imaginal World** *(Spring Break—informal)* (~35 pp.)
 
-Ibn Arabi's imaginal world (ʿālam al-mithāl) occupies a realm between sensible and intelligible, where possibilities take on form. His framework transforms Avicenna's essence/existence distinction and anticipates Leibniz's concern with why these possibilities rather than others become actual. Rabia's sayings mark an earlier moment in the tradition.
+Ibn Arabi's imaginal world (ʿālam al-mithāl) occupies a realm between sensible and intelligible, where possibilities take on form. His framework transforms Avicenna's essence/existence distinction and anticipates Leibniz's concern with why these possibilities rather than others become actual. The Adam chapter introduces the human being as comprehensive mirror of divine names; the Joseph chapter develops imagination as an ontological realm through dream interpretation.
 
-- Rabia al-Adawiyya, selected sayings and poems (~5 pp.)
-- Ibn Arabi, *Fuṣūṣ al-Ḥikam* (Bezels of Wisdom), "Adam" chapter (~10 pp., Austin or Dagli trans.)
-- William Chittick, *The Sufi Path of Knowledge*, chapter 1 (~20 pp.)
+- Ibn Arabi, *Fuṣūṣ al-Ḥikam* (Bezels of Wisdom), "Adam" and "Joseph" chapters (Austin trans.)
 
 *Unit II Workshop — March 19 or 20*
 
@@ -115,7 +113,7 @@ Nishida's "place of absolute nothingness" (zettai mu no basho) holds particulars
 Eternal objects ingress into actual occasions as pure potentials. Whitehead's God functions as the primordial envisagement of possibility, a role that recalls Leibniz, and Peirce's categories find new form in this processual framework.
 
 - Whitehead, *Science and the Modern World*, chapter 11 (~25 pp.)
-- Steven Shaviro, *Without Criteria*, chapter 2: "Actual Entities and Eternal Objects" (~20 pp.)
+- Isabelle Stengers, *Thinking with Whitehead*, selections (~20 pp.)
 
 **Week 13 — April 29: Attention and Awareness** (~45 pp.)
 
@@ -148,7 +146,7 @@ Ruth Barcan Marcus founded quantified modal logic; her Barcan formula raises que
 
 **Week 16 — May 20: Producing the Possible** (~50 pp.)
 
-How do possibility spaces themselves get produced? Foster's work shows tradition constraining what becomes thinkable while furnishing materials for innovation, bringing the semester's philosophical questions into contact with computational and sociological methods.
+How do possibility spaces themselves get produced? Foster's work shows tradition constraining what becomes thinkable while furnishing materials for innovation, bringing the semester's philosophical questions into contact with computational and sociological methods. Borges's story explores the literary form of branching possibility.
 
 - Koch, Silvestro, and Foster, "The Evolutionary Dynamics of Cultural Change (As Told Through the Birth and Brutal, Blackened Death of Metal Music)" (SocArXiv preprint, ~40 pp.)
 - Jorge Luis Borges, "The Garden of Forking Paths" (~10 pp.)
