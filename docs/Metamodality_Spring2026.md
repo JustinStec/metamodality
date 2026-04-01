@@ -88,50 +88,55 @@ Heidegger transforms the Aristotelian vocabulary so that possibility becomes con
 - Heidegger, *Being and Time*, Division II chapter 1 (§§46–53, ~30 pp.)
 - Arendt, *The Human Condition*, chapter 5 sections 24–26 (~15 pp.)
 
-**April 7: Immediate Experience**
-
-Eliot's dissertation argues that experience begins as an undifferentiated felt whole prior to any subject-object distinction. Feeling is not a representation of reality — it is reality, before the apparatus of knowledge separates knower from known. His account of how finite centers of experience emerge from immediacy connects to Whitehead's process philosophy the following week and anticipates questions the novel will raise about what persists beneath perception.
-
-- T. S. Eliot, *Knowledge and Experience in the Philosophy of F.H. Bradley*, chapters 1–3
-
-**April 14: Eternal Objects and Ingression**
-
-Eternal objects ingress into actual occasions as pure potentials. Whitehead's God functions as the primordial envisagement of possibility, a role that recalls Leibniz, and Peirce's categories find new form in this processual framework.
-
-- Whitehead, *Science and the Modern World*, chapter 11
-- Isabelle Stengers, *Thinking with Whitehead*, selections
-
-*Unit III Workshop — April 17 or 18*
+*Unit III Workshop — April 3 or 4*
 
 ---
 
-## Unit IV: Process, Contemplation, Emanation
+## Unit IV: Hell, or Absolute Possibility
 
-**April 21: *The School of Night*, Part I**
+A photographer who will sacrifice anything for his art gets everything he asks for. Knausgaard's *The School of Night* (2024) tracks this Faustian arc through 1985 London and into a reckoning twenty-four years later, where the price turns out to be structural, folded into the bargain from the start. Campagna's *Technic and Magic* (2018) formalizes the same logic by building two opposed cosmogonies. Technic reduces all of reality to absolute language, admits no outside, and forecloses the possible by absorbing everything into a single register. Magic, organized around the ineffable and drawing on Ibn Arabi, Suhrawardi, and Mulla Sadra, holds open the dimension of existence that Technic cannot capture. Marlowe's Mephistopheles, who told Faustus the truth and went unbelieved, presides over both texts.
+
+**April 7: *The School of Night*, Part I**
 
 Hans, a Dutch artist who may or may not be the Devil, tells a young photographer that the first daguerreotype captured a figure from outside human temporality. His claims about mirrors, automata, and photography raise a question the novel never settles: are there entities that persist through surfaces the way eternal objects ingress into occasions — not as metaphor, but as a property of the medium itself?
 
 - Karl Ove Knausgaard, *The School of Night*, Parts I–II
 - Christopher Marlowe, *Doctor Faustus*, Act I scene 3 and Act V scene 2
 
-**April 28: *The School of Night*, Part II**
+**April 14: *The School of Night*, Part II**
 
 The novel jumps twenty-four years. Kristian's retrospective at MoMA marks the full actualization of his ambition, and the reckoning that follows reopens questions about the cost of individuation. Rilke's Orpheus, who moves between the realms of the living and the dead, offers the counterimage.
 
 - Karl Ove Knausgaard, *The School of Night*, Parts III–IV
 - Rainer Maria Rilke, *Sonnets to Orpheus* I.5, I.9, II.13
 
-**May 5: Technic and Magic**
+**April 21: *Technic and Magic***
 
 Campagna's two cosmogonies — Technic and Magic — emanate from opposing first principles: absolute language and the ineffable. His Islamic and Indian sources (Ibn Arabi, Suhrawardi, Mulla Sadra) transmit the same Neoplatonic inheritance that shaped Avicenna, but arrive at a different conclusion about what sustains reality. Where Technic closes the system by denying any outside, Magic holds open a dimension of existence that can never be reduced to linguistic classification.
 
 - Federico Campagna, *Technic and Magic*, Chapters 3–4: "Magic's Cosmogony" and "Magic's World"
 
-*Unit IV Workshop — May 7 or 8*
+*Unit IV Workshop — April 23 or 24*
 
 ---
 
-## Unit V: Mathematical and Formal Possibility
+## Unit V: Forms of the Possible
+
+Eliot argues in *Knowledge and Experience* (1964) that objects are never fully given; every finite center of experience carves its objects from a felt whole that exceeds any single point of view. Whitehead formalizes a different version of partial givenness through eternal objects, and Levin tests the vocabulary against biological matter, asking whether patterns literally ingress into substrates. Hamkins pluralizes the problem by constructing a multiverse in which distinct universes instantiate distinct concepts of set. Priest, at the limits of any such system, finds thought generating contradictions it cannot absorb; his reading of Nagarjuna's catuskoti returns the seminar to questions from its fourth week. Foster then asks how the space of thinkable possibilities gets produced by tradition, material practice, and historical constraint. Together these weeks trace different forms of resistance to the absolute possibility that the previous unit described.
+
+**April 28: The Half-Object**
+
+Eliot's dissertation argues that objects are never fully given. Every finite center of experience constitutes its objects perspectivally, carving them from a felt whole that exceeds any single point of view. An object is real but never completely determinate — it is always partly constituted by the knower and partly resistant to that constitution. This theory of half-objects opens the final sequence of the seminar: what are objects, how do they persist, and what produces the space of possible objects in the first place?
+
+- T. S. Eliot, *Knowledge and Experience in the Philosophy of F.H. Bradley*
+
+**May 5: Eternal Objects and Ingression**
+
+Eternal objects ingress into actual occasions as pure potentials. Whitehead's God functions as the primordial envisagement of possibility, a role that recalls Leibniz. Levin's recent work makes literal causal claims about pattern spaces that ingress into biological matter — a test case for whether Whitehead's vocabulary describes something real.
+
+- Whitehead, *Science and the Modern World*, chapter 11
+- Isabelle Stengers, *Thinking with Whitehead*, selections
+- Michael Levin, "Ingressing Minds" (2025)
 
 **May 12: Set-Theoretic Potentialism**
 
