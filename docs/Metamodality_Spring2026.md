@@ -108,13 +108,13 @@ Eternal objects ingress into actual occasions as pure potentials. Whitehead's Go
 
 ## Unit IV: Process, Contemplation, Emanation
 
-**April 21: The School of Night, Part I**
+**April 21: *The School of Night*, Part I**
 
 Knausgaard's Faustian novel tracks a young photographer in 1985 London who will pay any price for artistic greatness. Through its reworking of Marlowe's *Doctor Faustus*, the novel asks what possibilities become available when nothing is held back, and what that willingness destroys. Hans, the enigmatic Dutch artist, stages the question the seminar has been pursuing all semester: whether possibility has conditions that precede and survive the individuals who actualize it.
 
 - Karl Ove Knausgaard, *The School of Night*, first half (~250 pp.)
 
-**April 28: The School of Night, Part II**
+**April 28: *The School of Night*, Part II**
 
 The novel jumps twenty-four years. Kristian's retrospective at MoMA marks the full actualization of his ambition, and the reckoning that follows reopens questions about the cost of individuation. The temporal structure of the novel itself enacts a problem of form: how does a life that has sacrificed everything to possibility sustain itself once possibility has been exhausted?
 
