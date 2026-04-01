@@ -3,7 +3,7 @@
 **Center for Possible Minds Reading Group — Spring 2026**
 
 **Organizers:**     Justin Stec and Jacob Foster  
-**Schedule:**        Wednesdays, 4:00–5:30 PM  
+**Schedule:**        Tuesdays, 4:00–5:30 PM  
 **First Meeting:** February 4, 2026
 
 All texts provided by the organizers. Participants from all disciplinary backgrounds welcome.
@@ -81,26 +81,26 @@ Can a condition of possibility also be a condition of impossibility? Derrida's i
 - Husserl, "The Origin of Geometry" (~20 pp.)
 - Derrida, *Introduction to "The Origin of Geometry"*, selections (~25 pp.)
 
-**Week 9 — April 1: Death and Natality** (~45 pp.)
+**Week 9 — March 31: Death and Natality** (~45 pp.)
 
 Heidegger transforms the Aristotelian vocabulary so that possibility becomes constitutive of Dasein; death individualizes as the ownmost possibility. Arendt's natality—the capacity to begin something new—offers a counter-emphasis to Heidegger's being-toward-death.
 
 - Heidegger, *Being and Time*, Division II chapter 1 (§§46–53, ~30 pp.)
 - Arendt, *The Human Condition*, chapter 5 sections 24–26 (~15 pp.)
 
-**Week 10 — April 8: Firstness and Continuity** (~50 pp.)
+**April 7: Firstness and Continuity**
 
 Firstness is pure qualitative possibility, prior to relation or resistance. Peirce's continuum allows possibility to grade into actuality, and his categories resurface in Whitehead's process philosophy.
 
-- Peirce, "A Guess at the Riddle" (~34 pp.)
-- "The Continuity of Life: On Peirce's Objective Idealism" (~16 pp.)
+- Peirce, "A Guess at the Riddle"
+- "The Continuity of Life: On Peirce's Objective Idealism"
 
-**Week 11 — April 15: Nothingness East and West** (~35 pp.)
+**April 14: Eternal Objects and Ingression**
 
-Nishida's "place of absolute nothingness" (zettai mu no basho) holds particulars without being one itself. His synthesis of Zen Buddhism and Western phenomenology offers a different response to the Parmenidean problem than Aristotle's. Lalla's Kashmiri Shaivite poetry pursues nothingness through a different idiom.
+Eternal objects ingress into actual occasions as pure potentials. Whitehead's God functions as the primordial envisagement of possibility, a role that recalls Leibniz, and Peirce's categories find new form in this processual framework.
 
-- Nishida Kitarō, *An Inquiry into the Good*, Part I chapters 1–3 (~25 pp.)
-- Lalla, *Naked Song*, selections (~10 pp.)
+- Whitehead, *Science and the Modern World*, chapter 11
+- Isabelle Stengers, *Thinking with Whitehead*, selections
 
 *Unit III Workshop — April 17 or 18*
 
@@ -108,27 +108,24 @@ Nishida's "place of absolute nothingness" (zettai mu no basho) holds particulars
 
 ## Unit IV: Process, Contemplation, Emanation
 
-**Week 12 — April 22: Eternal Objects and Ingression** (~45 pp.)
+**April 21: The School of Night, Part I**
 
-Eternal objects ingress into actual occasions as pure potentials. Whitehead's God functions as the primordial envisagement of possibility, a role that recalls Leibniz, and Peirce's categories find new form in this processual framework.
+Knausgaard's Faustian novel tracks a young photographer in 1985 London who will pay any price for artistic greatness. Through its reworking of Marlowe's *Doctor Faustus*, the novel asks what possibilities become available when nothing is held back, and what that willingness destroys. Hans, the enigmatic Dutch artist, stages the question the seminar has been pursuing all semester: whether possibility has conditions that precede and survive the individuals who actualize it.
 
-- Whitehead, *Science and the Modern World*, chapter 11 (~25 pp.)
-- Isabelle Stengers, *Thinking with Whitehead*, selections (~20 pp.)
+- Karl Ove Knausgaard, *The School of Night*, first half (~250 pp.)
 
-**Week 13 — April 29: Attention and Awareness** (~45 pp.)
+**April 28: The School of Night, Part II**
 
-Thompson and Varela bridge first-person contemplative methods and third-person neuroscience. The Buddhist concept of awareness (rigpa) may constitute a kind of possibility prior to Western categories, returning to questions Nagarjuna raised. Weil's account of attention resonates with contemplative approaches while drawing on Platonic sources.
+The novel jumps twenty-four years. Kristian's retrospective at MoMA marks the full actualization of his ambition, and the reckoning that follows reopens questions about the cost of individuation. The temporal structure of the novel itself enacts a problem of form: how does a life that has sacrificed everything to possibility sustain itself once possibility has been exhausted?
 
-- Evan Thompson, *Waking, Dreaming, Being*, chapter 1 (~20 pp.)
-- Simone Weil, "Reflections on the Right Use of School Studies with a View to the Love of God" (~10 pp.)
-- Francisco Varela, "Neurophenomenology: A Methodological Remedy for the Hard Problem" (~15 pp.)
+- Karl Ove Knausgaard, *The School of Night*, second half (~250 pp.)
 
-**Week 14 — May 6: Emanation and Superabundance** (~40 pp.)
+**May 5: Emanation and Superabundance**
 
 Possibility flows from the One's inexhaustible superabundance. This emanationist framework shaped Avicenna and passed into German Idealism; it offers a counterpoint to the Aristotelian model of potentiality. Conway synthesizes Neoplatonic emanation with Kabbalistic and vitalist sources.
 
-- Plotinus, *Enneads* V.1 (~25 pp.)
-- Anne Conway, *Principles of the Most Ancient and Modern Philosophy*, selections (~15 pp.)
+- Plotinus, *Enneads* V.1
+- Anne Conway, *Principles of the Most Ancient and Modern Philosophy*, selections
 
 *Unit IV Workshop — May 7 or 8*
 
@@ -136,20 +133,20 @@ Possibility flows from the One's inexhaustible superabundance. This emanationist
 
 ## Unit V: Mathematical and Formal Possibility
 
-**Week 15 — May 13: Set-Theoretic Potentialism** (~60 pp.)
+**May 12: Set-Theoretic Potentialism**
 
 Ruth Barcan Marcus founded quantified modal logic; her Barcan formula raises questions about the relation between possibility and existence. Hamkins's multiverse holds many distinct concepts of set, each instantiated in a corresponding universe. Potentialism treats the hierarchy as indefinitely extensible, echoing Aristotle's claim that actuality precedes potentiality while reversing its valence.
 
-- Ruth Barcan Marcus, "Modalities and Intensional Languages" (1961, ~15 pp.)
-- Hamkins, "The Set-Theoretic Multiverse" (2012, ~25 pp.)
-- Hamkins and Linnebo, "The Modal Logic of Set-Theoretic Potentialism" (2022, ~20 pp.)
+- Ruth Barcan Marcus, "Modalities and Intensional Languages" (1961)
+- Hamkins, "The Set-Theoretic Multiverse" (2012)
+- Hamkins and Linnebo, "The Modal Logic of Set-Theoretic Potentialism" (2022)
 
-**Week 16 — May 20: Producing the Possible** (~50 pp.)
+**May 19: Producing the Possible**
 
 How do possibility spaces themselves get produced? Foster's work shows tradition constraining what becomes thinkable while furnishing materials for innovation, bringing the semester's philosophical questions into contact with computational and sociological methods. Borges's story explores the literary form of branching possibility.
 
-- Koch, Silvestro, and Foster, "The Evolutionary Dynamics of Cultural Change (As Told Through the Birth and Brutal, Blackened Death of Metal Music)" (SocArXiv preprint, ~40 pp.)
-- Jorge Luis Borges, "The Garden of Forking Paths" (~10 pp.)
+- Koch, Silvestro, and Foster, "The Evolutionary Dynamics of Cultural Change (As Told Through the Birth and Brutal, Blackened Death of Metal Music)" (SocArXiv preprint)
+- Jorge Luis Borges, "The Garden of Forking Paths"
 
 *Unit V Workshop — May 21 or 22*
 
