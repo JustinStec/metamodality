@@ -88,12 +88,11 @@ Heidegger transforms the Aristotelian vocabulary so that possibility becomes con
 - Heidegger, *Being and Time*, Division II chapter 1 (§§46–53, ~30 pp.)
 - Arendt, *The Human Condition*, chapter 5 sections 24–26 (~15 pp.)
 
-**April 7: Firstness and Continuity**
+**April 7: Immediate Experience**
 
-Firstness is pure qualitative possibility, prior to relation or resistance. Peirce's continuum allows possibility to grade into actuality, and his categories resurface in Whitehead's process philosophy.
+Eliot's dissertation argues that experience begins as an undifferentiated felt whole prior to any subject-object distinction. Feeling is not a representation of reality — it is reality, before the apparatus of knowledge separates knower from known. His account of how finite centers of experience emerge from immediacy connects to Whitehead's process philosophy the following week and anticipates questions the novel will raise about what persists beneath perception.
 
-- Peirce, "A Guess at the Riddle"
-- "The Continuity of Life: On Peirce's Objective Idealism"
+- T. S. Eliot, *Knowledge and Experience in the Philosophy of F.H. Bradley*, chapters 1–3
 
 **April 14: Eternal Objects and Ingression**
 
@@ -110,22 +109,23 @@ Eternal objects ingress into actual occasions as pure potentials. Whitehead's Go
 
 **April 21: *The School of Night*, Part I**
 
-Knausgaard's Faustian novel tracks a young photographer in 1985 London who will pay any price for artistic greatness. Through its reworking of Marlowe's *Doctor Faustus*, the novel asks what possibilities become available when nothing is held back, and what that willingness destroys. Hans, the enigmatic Dutch artist, stages the question the seminar has been pursuing all semester: whether possibility has conditions that precede and survive the individuals who actualize it.
+Hans, a Dutch artist who may or may not be the Devil, tells a young photographer that the first daguerreotype captured a figure from outside human temporality. His claims about mirrors, automata, and photography raise a question the novel never settles: are there entities that persist through surfaces the way eternal objects ingress into occasions — not as metaphor, but as a property of the medium itself?
 
-- Karl Ove Knausgaard, *The School of Night*, first half (~250 pp.)
+- Karl Ove Knausgaard, *The School of Night*, Parts I–II
+- Christopher Marlowe, *Doctor Faustus*, Act I scene 3 and Act V scene 2
 
 **April 28: *The School of Night*, Part II**
 
-The novel jumps twenty-four years. Kristian's retrospective at MoMA marks the full actualization of his ambition, and the reckoning that follows reopens questions about the cost of individuation. The temporal structure of the novel itself enacts a problem of form: how does a life that has sacrificed everything to possibility sustain itself once possibility has been exhausted?
+The novel jumps twenty-four years. Kristian's retrospective at MoMA marks the full actualization of his ambition, and the reckoning that follows reopens questions about the cost of individuation. Rilke's Orpheus, who moves between the realms of the living and the dead, offers the counterimage.
 
-- Karl Ove Knausgaard, *The School of Night*, second half (~250 pp.)
+- Karl Ove Knausgaard, *The School of Night*, Parts III–IV
+- Rainer Maria Rilke, *Sonnets to Orpheus* I.5, I.9, II.13
 
-**May 5: Emanation and Superabundance**
+**May 5: Technic and Magic**
 
-Possibility flows from the One's inexhaustible superabundance. This emanationist framework shaped Avicenna and passed into German Idealism; it offers a counterpoint to the Aristotelian model of potentiality. Conway synthesizes Neoplatonic emanation with Kabbalistic and vitalist sources.
+Campagna's two cosmogonies — Technic and Magic — emanate from opposing first principles: absolute language and the ineffable. His Islamic and Indian sources (Ibn Arabi, Suhrawardi, Mulla Sadra) transmit the same Neoplatonic inheritance that shaped Avicenna, but arrive at a different conclusion about what sustains reality. Where Technic closes the system by denying any outside, Magic holds open a dimension of existence that can never be reduced to linguistic classification.
 
-- Plotinus, *Enneads* V.1
-- Anne Conway, *Principles of the Most Ancient and Modern Philosophy*, selections
+- Federico Campagna, *Technic and Magic*, Chapters 3–4: "Magic's Cosmogony" and "Magic's World"
 
 *Unit IV Workshop — May 7 or 8*
 
@@ -135,20 +135,27 @@ Possibility flows from the One's inexhaustible superabundance. This emanationist
 
 **May 12: Set-Theoretic Potentialism**
 
-Ruth Barcan Marcus founded quantified modal logic; her Barcan formula raises questions about the relation between possibility and existence. Hamkins's multiverse holds many distinct concepts of set, each instantiated in a corresponding universe. Potentialism treats the hierarchy as indefinitely extensible, echoing Aristotle's claim that actuality precedes potentiality while reversing its valence.
+Ruth Barcan Marcus founded quantified modal logic; her Barcan formula raises questions about the relation between possibility and existence. Hamkins's multiverse holds many distinct concepts of set, each instantiated in a corresponding universe.
 
-- Ruth Barcan Marcus, "Modalities and Intensional Languages" (1961)
-- Hamkins, "The Set-Theoretic Multiverse" (2012)
-- Hamkins and Linnebo, "The Modal Logic of Set-Theoretic Potentialism" (2022)
+- Ruth Barcan Marcus, "Modalities and Intensional Languages"
+- Hamkins, "The Set-Theoretic Multiverse"
+- Hamkins and Linnebo, "The Modal Logic of Set-Theoretic Potentialism"
 
-**May 19: Producing the Possible**
+**May 19: Contradiction and the Limits of Thought**
+
+Priest's dialetheism holds that some contradictions are true — that the limits of thought generate paradoxes no consistent system can resolve. His inclosure schema formalizes the structure these paradoxes share, and his reading of Nagarjuna's catuskoti returns the seminar to questions raised in Week 4. If Hamkins's multiverse proliferates consistent systems, Priest asks what happens at their edges.
+
+- Graham Priest, *Beyond the Limits of Thought*, chapters 1–2 and 16
+- Graham Priest, "The Logic of the Catuskoti"
+
+**May 26: Producing the Possible**
 
 How do possibility spaces themselves get produced? Foster's work shows tradition constraining what becomes thinkable while furnishing materials for innovation, bringing the semester's philosophical questions into contact with computational and sociological methods. Borges's story explores the literary form of branching possibility.
 
 - Koch, Silvestro, and Foster, "The Evolutionary Dynamics of Cultural Change (As Told Through the Birth and Brutal, Blackened Death of Metal Music)" (SocArXiv preprint)
 - Jorge Luis Borges, "The Garden of Forking Paths"
 
-*Unit V Workshop — May 21 or 22*
+*Unit V Workshop — May 28 or 29*
 
 ---
 
